@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles/0-general-styles.css">
+    <link rel="stylesheet" href="styles/0-navbar.css">
+    <link rel="stylesheet" href="styles/1-home.css">
+    <link rel="stylesheet" href="styles/2-about.css">
+    <link rel="stylesheet" href="styles/3-product.css">
+    <link rel="stylesheet" href="styles/4-services.css">
+    <link rel="stylesheet" href="styles/5-blog.css">
+    <link rel="stylesheet" href="styles/6-support.css">
+    <link rel="stylesheet" href="styles/7-footer.css">
+    <link rel="stylesheet" href="styles/8-animation.css">
+    <link rel="stylesheet" href="styles/9-mobile-style.css">
+    <link rel="stylesheet" href="styles/10-cart.css">
+    <script defer src="scripts/app.js"></script>
+    <script defer src="scripts/checkout.js"></script>
+    <title>QuantXT Web Development</title>
+</head>
+<body>
+    <!--Header-->
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu' id="menuu"></i>
+          <div class="logo"><a href="#">QuantXT</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">QuantXT</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="#home">Home</a></li>
+              <li>
+                <a href="#about">About <i class='bx bxs-chevron-down about-arrow arrow'></i></a>
+                <ul class="about-sub-menu sub-menu" style="left: -25px;">
+                  <li><a href="#our-story">Our Story</a></li>
+                  <li><a href="#the-team">The Team</a></li>
+                  <li><a href="#why-work-with-us">Why Work With Us</a></li>
+                  <li><a href="#approach">Our Approach</a></li>
+                </ul>
+              </li>
+              <li><a href="#products">Products</a></li>
+              <li>
+                <a href="#services">Services <i class='bx bxs-chevron-down service-arrow arrow '></i></a>
+                <ul class="service-sub-menu sub-menu" style="left: -45px;">
+                  <li><a href="#srvs-offering">Service Offerings</a></li>
+                  <li><a href="#process-overview">Process Overview</a></li>
+                  <li><a href="#pricing-and-packaging">Pricing and Packages</a></li>
+                </ul>
+              </li>
+              <li><a href="#blog">Blog</a></li>
+              <li>
+                <a href="#support">Support <i class='bx bxs-chevron-down support-arrow arrow '></i></a>
+                <ul class="support-sub-menu sub-menu" style="left: -10px;">
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#faqs">FAQs</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  <!--  <div class="sub-nav">
+      <a href="checkout.html" target="_blank"><i class='bx bxs-cart show-cart' title="Checkout"></i></a>
+    </div> -->
+    
+    <!--Home Start-->
+    <section class="home main-section hidden" id="home">
+      <h1>Exclusive Websites <br> <span id="typewriter">Crafted for Success</span></h1>
+      <h2>Custom-Built Websites Designed by a <mark>Team of Specialists</mark></h2>
+      <div class="btn-wrapper">
+        <button class="explore-our-work">Explore Our Work</button>
+        <button class="get-in-touch">Get in Touch</button>
+      </div>
+    </section>
+    <!--Home End-->
+
+    <hr>
+
+    <!--About start-->
+    <section class="about main-section hidden" id="about">
+      <h1 class="sect-name about-header">All About Us</h1>
+
+      <!--Our Story (Sub Section)-->
+      <section class="our-story sub-section hidden" id="our-story">
+        <h2 class="sub-sect-name">Our<span>Story</span></h2>
+        <h3 class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, earum, asperiores optio nostrum dolores modi vel consequatur magni accusamus dicta consequuntur unde maxime in nemo autem aspernatur adipisci deserunt assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, natus cum quaerat a, sapiente vitae ex illum dignissimos sit similique eius corporis ipsa iste exercitationem doloremque. Architecto suscipit aut vitae pariatur, quae libero exercitationem enim nam, ea dolorem quod blanditiis reprehenderit officiis molestias nihil quaerat soluta.</h3>
+      </section>
+      <!--END-->
+
+      <!--The Team (Sub Section)-->
+      <section class="the-team sub-section hidden" id="the-team">
+        <h2 class="sub-sect-name">Meet <span>The Team</span></h2>
+        <h3 class="info">Introducing the Group of Experts Who Came Together to Create this Masterpiece</h3>
+        <div class="wrapper">
+          <div class="card">
+            <div class="img"></div>
+            <div class="info-wrapper">
+              <h2>G. Nelson</h2>
+              <h3>Director</h3>
+              <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto architecto nesciunt nisi quod veniam.</h4>
+              <div class="links-wrapper">
+                <a href="" target="_blank">
+                  <div title="LinkedIn" class="link linkedin-div"><svg class="linkedin" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Github" class="link github-div"><svg class="github" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="X" class="link x-div"><svg class="x" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Facebook" class="link facebook-div"><svg class="facebook" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Instagram" class="link instagram-div"><svg class="instagram" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"/></svg></div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img"></div>
+            <div class="info-wrapper">
+              <h2>Mercy Nelson</h2>
+              <h3>UI/UX Designer</h3>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, numquam itaque ab perspiciatis nobis eligendi.</h4>
+              <div class="links-wrapper">
+                <a href="" target="_blank">
+                  <div title="LinkedIn" class="link linkedin-div"><svg class="linkedin" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Github" class="link github-div"><svg class="github" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="X" class="link x-div"><svg class="x" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Facebook" class="link facebook-div"><svg class="facebook" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Instagram" class="link instagram-div"><svg class="instagram" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"/></svg></div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="img"></div>
+            <div class="info-wrapper">
+              <h2>Chris Nelson</h2>
+              <h3>Project Manager</h3>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, earum id voluptate odio placeat quod.</h4>
+              <div class="links-wrapper">
+                <a href="" target="_blank">
+                  <div title="LinkedIn" class="link linkedin-div"><svg class="linkedin" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Github" class="link github-div"><svg class="github" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="X" class="link x-div"><svg class="x" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Facebook" class="link facebook-div"><svg class="facebook" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Instagram" class="link instagram-div"><svg class="instagram" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"/></svg></div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"></div>
+            <div class="info-wrapper">
+              <h2>Vicky Chan</h2>
+              <h3>Backend Developer</h3>
+              <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta. Ex officiis at porro illum. Ehh???</h4>
+              <div class="links-wrapper">
+                <a href="" target="_blank">
+                  <div title="LinkedIn" class="link linkedin-div"><svg class="linkedin" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Github" class="link github-div"><svg class="github" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="X" class="link x-div"><svg class="x" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Facebook" class="link facebook-div"><svg class="facebook" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"/></svg></div>
+                </a>
+                <a href="" target="_blank">
+                  <div title="Instagram" class="link instagram-div"><svg class="instagram" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"/></svg></div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+          A dedicated section for introducing each team member in more detail.
+          For each member, include:
+          Photo: Professional headshot.
+          Bio: A short bio that includes their role, experience, and key skills.
+          Specialties: Highlight specific areas of expertise, such as front-end development, UI/UX design, back-end programming, or SEO.
+          Social Links: Optional links to LinkedIn or personal productss.
+        -->
+      </section>
+      <!--END-->
+
+      <section class="work-with-us sub-section hidden" id="why-work-with-us">
+        <h2 class="sub-sect-name">Why Work<span>With Us</span></h2>
+        <h3 class="info">We are dedicated to delivering top-quality services tailored to your business needs. Heres why you should choose us:</h3>
+          <div class="reasons">
+            <div class="reason">
+              <h3 style="background-image: url(assets/medal-fill.svg);">Expertise & Experience</h3>
+              <h4>With years of experience in web development, we know what works. Our team of experts ensures your project is in the best hands.</h4>
+            </div>
+            <div class="reason">
+              <h4>We don’t believe in one-size-fits-all. We create custom solutions that are perfectly aligned with your business goals.</h4>
+              <h3 style="background-image: url(assets/lightbulb-flash-fill.svg);">Custom solutions</h3>
+            </div>
+            <div class="reason">
+              <h3 style="background-image: url(assets/user-smile-fill.svg);">Client-Centric Approach</h3>
+              <h4>Your satisfaction is our priority. We listen to your needs and keep you involved every step of the way.</h4>
+            </div>
+            <div class="reason">
+              <h4>We respect your deadlines. Our team is committed to delivering high-quality work on time, every time.</h4>
+              <h3 style="background-image: url(assets/timer-flash-fill.svg);">One-Time Delivery</h3>
+            </div>
+            <div class="reason">
+              <h3 style="background-image: url(assets/heart-2-fill.svg);">Ongoing Support</h3>
+              <h4>Our relationship doesn’t end with project delivery. We offer ongoing support to help you succeed long-term.</h4>
+            </div>
+          </div>
+        
+        <!--
+          A section that emphasizes the benefits of working with a diverse, multi-skilled team. 
+          Highlight your collective approach to problem-solving and project execution.
+        -->
+      </section>
+
+      <!--Our Approach Sub Section-->
+      <section class="approach sub-section hidden" id="approach">
+        <h2 class="sub-sect-name">Our<span> Approach</span></h2>
+        <h3 class="info">We believe in a structured yet flexible approach to delivering the best solutions tailored to your business needs.</h3>
+        
+        <div class="approach-steps">
+          <div class="step">
+            <div class="icon"><div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11 18H7.94101C7.64391 16.7274 6.30412 15.6857 5.75395 14.9992C4.65645 13.6297 4 11.8915 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10C20 11.8925 19.3428 13.6315 18.2443 15.0014C17.6944 15.687 16.3558 16.7276 16.059 18H13V13H11V18ZM16 20V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V20H16Z"/></svg></div></div>
+            <h3>Discovery</h3>
+            <h4>We start by understanding your business, goals, and challenges to ensure a solution that fits perfectly.</h4>
+          </div>
+          <div class="step">
+            <div class="icon"><div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11 2.53513C10.4117 2.19479 9.72857 2 9 2 6.79086 2 5 3.79086 5 6V7.77422C4.14895 8.11644 3.45143 8.64785 2.94126 9.34933 2.29239 10.2415 2 11.3347 2 12.5 2 14.0614 2.79529 15.4356 4 16.242V17.5C4 19.9853 6.01472 22 8.5 22 9.42507 22 10.285 21.7209 11 21.2422V17.5C11 16.167 10.67 15.3147 10.1402 14.7408 9.59743 14.1528 8.71622 13.7165 7.3356 13.4864L7.6644 11.5136C8.96602 11.7305 10.1058 12.1373 11 12.8271V2.53513ZM13 2.53513V12.8271C13.8942 12.1373 15.034 11.7305 16.3356 11.5136L16.6644 13.4864C15.2838 13.7165 14.4026 14.1528 13.8598 14.7408 13.33 15.3147 13 16.167 13 17.5V21.2422C13.715 21.7209 14.5749 22 15.5 22 17.9853 22 20 19.9853 20 17.5V16.242C21.2047 15.4356 22 14.0614 22 12.5 22 11.3347 21.7076 10.2415 21.0587 9.34933 20.5486 8.64785 19.8511 8.11644 19 7.77422V6C19 3.79086 17.2091 2 15 2 14.2714 2 13.5883 2.19479 13 2.53513Z"/></svg></div></div>
+            <h3>Strategy</h3>
+            <h4>We develop a clear, actionable plan that aligns with your objectives and sets the foundation for success.</h4>
+          </div>
+          <div class="step">
+            <div class="icon"><div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5222 2 22 5.97778 22 10.8889C22 13.9556 19.5111 16.4444 16.4444 16.4444H14.4778C13.5556 16.4444 12.8111 17.1889 12.8111 18.1111C12.8111 18.5333 12.9778 18.9222 13.2333 19.2111C13.5 19.5111 13.6667 19.9 13.6667 20.3333C13.6667 21.2556 12.9 22 12 22C6.47778 22 2 17.5222 2 12C2 6.47778 6.47778 2 12 2ZM7.5 12C8.32843 12 9 11.3284 9 10.5C9 9.67157 8.32843 9 7.5 9C6.67157 9 6 9.67157 6 10.5C6 11.3284 6.67157 12 7.5 12ZM16.5 12C17.3284 12 18 11.3284 18 10.5C18 9.67157 17.3284 9 16.5 9C15.6716 9 15 9.67157 15 10.5C15 11.3284 15.6716 12 16.5 12ZM12 9C12.8284 9 13.5 8.32843 13.5 7.5C13.5 6.67157 12.8284 6 12 6C11.1716 6 10.5 6.67157 10.5 7.5C10.5 8.32843 11.1716 9 12 9Z"/></svg></div></div>
+            <h3>Design & Development</h3>
+            <h4>Our creative and technical teams collaborate to bring your vision to life with cutting-edge design and development.</h4>
+          </div>
+          <div class="step">
+            <div class="icon"><div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 2V4H16V18C16 20.2091 14.2091 22 12 22C9.79086 22 8 20.2091 8 18V4H7V2H17ZM13 15C12.4477 15 12 15.4477 12 16C12 16.5523 12.4477 17 13 17C13.5523 17 14 16.5523 14 16C14 15.4477 13.5523 15 13 15ZM11 12C10.4477 12 10 12.4477 10 13C10 13.5523 10.4477 14 11 14C11.5523 14 12 13.5523 12 13C12 12.4477 11.5523 12 11 12ZM14 4H10V8H14V4Z"/></svg></div></div>
+            <h3>Testing & Feedback</h3>
+            <h4>We rigorously test the solution to ensure it meets our high standards and adjust based on your feedback.</h4>
+          </div>
+          <div class="step">
+            <div class="icon"><div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.33053 15.9288C5.115 14.9914 5.00054 14.0103 5.00054 12.9999C5.00054 7.91198 7.90319 3.5636 12.0005 1.81799C16.0979 3.5636 19.0005 7.91198 19.0005 12.9999C19.0005 14.0103 18.8861 14.9914 18.6706 15.9288L20.6907 17.7245C20.8704 17.8842 20.9109 18.1493 20.7872 18.3555L18.33 22.4508C18.1879 22.6876 17.8808 22.7644 17.644 22.6223C17.609 22.6013 17.5766 22.576 17.5477 22.5471L15.2934 20.2928C15.1059 20.1053 14.8515 19.9999 14.5863 19.9999H9.41476C9.14954 19.9999 8.89519 20.1053 8.70765 20.2928L6.45337 22.5471C6.2581 22.7424 5.94152 22.7424 5.74626 22.5471C5.71735 22.5182 5.6921 22.4859 5.67107 22.4508L3.21385 18.3555C3.09014 18.1493 3.13071 17.8842 3.31042 17.7245L5.33053 15.9288ZM12.0005 12.9999C13.1051 12.9999 14.0005 12.1045 14.0005 10.9999C14.0005 9.89537 13.1051 8.99994 12.0005 8.99994C10.896 8.99994 10.0005 9.89537 10.0005 10.9999C10.0005 12.1045 10.896 12.9999 12.0005 12.9999Z"/></svg></div></div>
+            <h3>Launch & Support</h3>
+            <h4>After launch, we provide ongoing support to ensure your solution continues to perform optimally.</h4>
+          </div>
+        </div>
+        <!--
+          Philosopy and values ==> User centered Design, Innovation and Creativity, Quality and Precision
+          Collaborative Process ==> Client Collaboration, Team collaborations
+          Methodology ==> Research and Discovery, Design and Prototyping, Development and Testing, Launch and Support
+          Ensuring Quality ==> Attention to Detail, Continous Improvement, Client Satisaction
+        -->
+      </section>
+      <!--END-->
+
+    </section>
+    <!--About End-->
+
+    <hr>
+
+    <!--Products Start-->
+    <section class="main-section products hidden" id="products">
+      <h1 class="sect-name">Products Showcase</h1>
+
+      <div class="sub-section template-section hidden">
+
+        <h2 class="sub-sect-name">Available<span>Templates</span></h2>
+
+          <div class="temp-btn-filter" id="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Templates</button>
+            <button class="filter-btn" data-filter="one-page">One Page</button>
+            <button class="filter-btn" data-filter="niche">Niche</button>
+            <button class="filter-btn" data-filter="multipage">Multipage</button>
+          </div>
+
+          <div class="filterable-cards" id="filterable-cards">
+
+            <div class="template" data-name="one-page">
+              <div class="img"><img src="assets/samurai_girl_katana-wallpaper-1920x1080.jpg" alt=""></div>
+              <div class="temp-details">
+                <h3 class="temp-name">Name: <span>One Page</span></h3>
+                <h3 class="temp-price">Price: <span>$100</span></h3>
+                <h3 class="temp-type">Type: <span>Landing Page/ Portfolio / Startup / Resume/CV / Event</span></h3>
+                <h3 class="temp-desc">Desc: <span>Lorem ipsum dolor sit amet.</span></h3>
+                <h3 class="temp-rating">Rating: <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></span></h3>
+                <h3 class="temp-update">Last Updated: <span>21/08/24</span></h3>
+                <h3 class="temp-feats">Features: <span><ul>
+                  <li>Responsive Design</li>
+                  <li>Customizable</li>
+                  <li>SEO Ready</li>
+                </ul></span></h3>
+                <h3 class="temp-compatibility">Compatibility:<span>All Browsers</span></h3>
+                <div class="btn-wrapper">
+                  <button class="add-to-cart add">Add<i class='bx bxs-cart-add'></i></button>
+                  <a href="#" target="_blank"><button class="preview">Preview<i class='bx bx-link-external' ></i></button></a>
+                </div>
+              </div>
+            </div>
+            <!--ONE PAGE END-->
+            <div class="template" data-name="niche">
+              <div class="img"><img src="assets/samurai_girl_katana-wallpaper-1920x1080.jpg" alt=""></div>
+              <div class="temp-details">
+                <h3 class="temp-name">Name: <span>Niche</span></h3>
+                <h3 class="temp-price">Price: <span>$1000</span></h3>
+                <h3 class="temp-type">Type: <span>Photography/ Restaurant/ Fitness/ Real estate/ Wedding</span></h3>
+                <h3 class="temp-desc">Desc: <span>Lorem ipsum dolor sit amet.</span></h3>
+                <h3 class="temp-rating">Rating: <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></span></h3>
+                <h3 class="temp-update">Last Updated: <span>21/08/24</span></h3>
+                <h3 class="temp-feats">Features: <span><ul>
+                  <li>Responsive Design</li>
+                  <li>Customizable</li>
+                  <li>SEO Ready</li>
+                </ul></span></h3>
+                <h3 class="temp-compatibility">Compatibility:<span>All Browsers</span></h3>
+                <div class="btn-wrapper">
+                  <button class="add-to-cart add">Add<i class='bx bxs-cart-add'></i></button>
+                  <a href="#" target="_blank"><button class="preview">Preview<i class='bx bx-link-external' ></i></button></a>
+                </div>
+              </div>
+            </div>
+            <!--NICHE END-->
+            <div class="template" data-name="multipage">
+              <div class="img"><img src="assets/samurai_girl_katana-wallpaper-1920x1080.jpg" alt=""></div>
+              <div class="temp-details">
+                <h3 class="temp-name">Name: <span>Multipage</span></h3>
+                <h3 class="temp-price">Price: <span>$5000</span></h3>
+                <h3 class="temp-type">Type: <span>E-Commerce/ Educational / Blog & News / Healthcare</span></h3>
+                <h3 class="temp-desc">Desc: <span>Lorem ipsum dolor sit amet.</span></h3>
+                <h3 class="temp-rating">Rating: <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></span></h3>
+                <h3 class="temp-update">Last Updated: <span>21/08/24</span></h3>
+                <h3 class="temp-feats">Features: <span><ul>
+                  <li>Responsive Design</li>
+                  <li>Customizable</li>
+                  <li>SEO Ready</li>
+                </ul></span></h3>
+                <h3 class="temp-compatibility">Compatibility:<span>All Browsers</span></h3>
+                <div class="btn-wrapper">
+                  <button class="add-to-cart add">Add<i class='bx bxs-cart-add'></i></button>
+                  <a href="#" target="_blank"><button class="preview">Preview<i class='bx bx-link-external' ></i></button></a>
+                </div>
+              </div>
+            </div>
+            <div class="template" data-name="multipage">
+              <div class="img"><img src="assets/samurai_girl_katana-wallpaper-1920x1080.jpg" alt=""></div>
+              <div class="temp-details">
+                <h3 class="temp-name">Name: <span>Multipage</span></h3>
+                <h3 class="temp-price">Price: <span>$5000</span></h3>
+                <h3 class="temp-type">Type: <span>E-Commerce/ Educational / Blog & News / Healthcare</span></h3>
+                <h3 class="temp-desc">Desc: <span>Lorem ipsum dolor sit amet.</span></h3>
+                <h3 class="temp-rating">Rating: <span><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></span></h3>
+                <h3 class="temp-update">Last Updated: <span>21/08/24</span></h3>
+                <h3 class="temp-feats">Features: <span><ul>
+                  <li>Responsive Design</li>
+                  <li>Customizable</li>
+                  <li>SEO Ready</li>
+                </ul></span></h3>
+                <h3 class="temp-compatibility">Compatibility:<span>All Browsers</span></h3>
+                <div class="btn-wrapper">
+                  <button class="add-to-cart add">Add<i class='bx bxs-cart-add'></i></button>
+                  <a href="#" target="_blank"><button class="preview">Preview<i class='bx bx-link-external' ></i></button></a>
+                </div>
+              </div>
+            </div>
+            <!--MULTIPAGE END-->
+          </div>
+        </div>
+
+    </section>
+    <!--Products End-->
+
+    <hr>
+
+    <!--Services Start-->
+    <section class="main-section services hidden" id="services">
+
+      <h1 class="sect-name">Our Services</h1>
+      <!--Services Offering (sub section)-->
+      <section class="srvs-offering sub-section" id="srvs-offering">
+        <h2 class="sub-sect-name">Service<span>Offerings</span></h2>
+        <h3 class="info">I wan cry!</h3>
+        <div class="wrapper">
+          <div class="srvs-card">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"/></svg></div>
+            <h3>Web <br> Design</h3>
+            <h4>Tailored, creative designs that capture brand identity.</h4>
+          </div>
+          <div class="srvs-card">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"/></svg></div>
+            <h3>Web <br> Redesign</h3>
+            <h4>Redesign your already existing website</h4>
+          </div>
+          <div class="srvs-card">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"/></svg></div>
+            <h3>Web Development</h3>
+            <h4>Robust, scalable websites built for performance.</h4>
+          </div>
+          <div class="srvs-card">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"/></svg></div>
+            <h3>SEO Optimization</h3>
+            <h4>Strategies to improve search engine visibility.</h4>
+          </div>
+          <div class="srvs-card">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"/></svg></div>
+            <h3>Ongoing Maintenance</h3>
+            <h4>Maintenance of sites we have made for you.</h4>
+          </div>
+        </div>
+        <!--
+          Web Design: Tailored, creative designs that capture brand identity.
+          Web Development: Robust, scalable websites built for performance.
+          SEO Optimization: Strategies to improve search engine visibility.
+          Ongoing Maintenance: Keeping websites updated and secure.
+        -->
+      </section>
+      <!--END-->
+
+      <!--Process Overview (sub section)-->
+      <section class="process-overview sub-section" id="process-overview">
+        <h2 class="sub-sect-name">Process<span>Overview</span></h2>
+
+        <div class="timeline">
+
+          <div class="container left-container">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3.06364 7.50914C4.70909 4.24092 8.09084 2 12 2C14.6954 2 16.959 2.99095 18.6909 4.60455L15.8227 7.47274C14.7864 6.48185 13.4681 5.97727 12 5.97727C9.39542 5.97727 7.19084 7.73637 6.40455 10.1C6.2045 10.7 6.09086 11.3409 6.09086 12C6.09086 12.6591 6.2045 13.3 6.40455 13.9C7.19084 16.2636 9.39542 18.0227 12 18.0227C13.3454 18.0227 14.4909 17.6682 15.3864 17.0682C16.4454 16.3591 17.15 15.3 17.3818 14.05H12V10.1818H21.4181C21.5364 10.8363 21.6 11.5182 21.6 12.2273C21.6 15.2727 20.5091 17.8363 18.6181 19.5773C16.9636 21.1046 14.7 22 12 22C8.09084 22 4.70909 19.7591 3.06364 16.4909C2.38638 15.1409 2 13.6136 2 12C2 10.3864 2.38638 8.85911 3.06364 7.50914Z"/></svg></div>
+            <div class="text-box">
+              <h2>Quantoxt Inc</h2>
+              <small>2023 - 2024</small>
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui atque ea distinctio amet. Minima rerum suscipit iste perferendis sit.</h2>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+          
+          <div class="container right-container">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3.06364 7.50914C4.70909 4.24092 8.09084 2 12 2C14.6954 2 16.959 2.99095 18.6909 4.60455L15.8227 7.47274C14.7864 6.48185 13.4681 5.97727 12 5.97727C9.39542 5.97727 7.19084 7.73637 6.40455 10.1C6.2045 10.7 6.09086 11.3409 6.09086 12C6.09086 12.6591 6.2045 13.3 6.40455 13.9C7.19084 16.2636 9.39542 18.0227 12 18.0227C13.3454 18.0227 14.4909 17.6682 15.3864 17.0682C16.4454 16.3591 17.15 15.3 17.3818 14.05H12V10.1818H21.4181C21.5364 10.8363 21.6 11.5182 21.6 12.2273C21.6 15.2727 20.5091 17.8363 18.6181 19.5773C16.9636 21.1046 14.7 22 12 22C8.09084 22 4.70909 19.7591 3.06364 16.4909C2.38638 15.1409 2 13.6136 2 12C2 10.3864 2.38638 8.85911 3.06364 7.50914Z"/></svg></div>
+            <div class="text-box">
+              <h2>Quantoxt Inc</h2>
+              <small>2023 - 2024</small>
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui atque ea distinctio amet. Minima rerum suscipit iste perferendis sit.</h2>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container left-container">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3.06364 7.50914C4.70909 4.24092 8.09084 2 12 2C14.6954 2 16.959 2.99095 18.6909 4.60455L15.8227 7.47274C14.7864 6.48185 13.4681 5.97727 12 5.97727C9.39542 5.97727 7.19084 7.73637 6.40455 10.1C6.2045 10.7 6.09086 11.3409 6.09086 12C6.09086 12.6591 6.2045 13.3 6.40455 13.9C7.19084 16.2636 9.39542 18.0227 12 18.0227C13.3454 18.0227 14.4909 17.6682 15.3864 17.0682C16.4454 16.3591 17.15 15.3 17.3818 14.05H12V10.1818H21.4181C21.5364 10.8363 21.6 11.5182 21.6 12.2273C21.6 15.2727 20.5091 17.8363 18.6181 19.5773C16.9636 21.1046 14.7 22 12 22C8.09084 22 4.70909 19.7591 3.06364 16.4909C2.38638 15.1409 2 13.6136 2 12C2 10.3864 2.38638 8.85911 3.06364 7.50914Z"/></svg></div>
+            <div class="text-box">
+              <h2>Wissie Inc</h2>
+              <small>2023 - 2024</small>
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui atque ea distinctio amet. Minima rerum suscipit iste perferendis sit.</h2>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container right-container">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3.06364 7.50914C4.70909 4.24092 8.09084 2 12 2C14.6954 2 16.959 2.99095 18.6909 4.60455L15.8227 7.47274C14.7864 6.48185 13.4681 5.97727 12 5.97727C9.39542 5.97727 7.19084 7.73637 6.40455 10.1C6.2045 10.7 6.09086 11.3409 6.09086 12C6.09086 12.6591 6.2045 13.3 6.40455 13.9C7.19084 16.2636 9.39542 18.0227 12 18.0227C13.3454 18.0227 14.4909 17.6682 15.3864 17.0682C16.4454 16.3591 17.15 15.3 17.3818 14.05H12V10.1818H21.4181C21.5364 10.8363 21.6 11.5182 21.6 12.2273C21.6 15.2727 20.5091 17.8363 18.6181 19.5773C16.9636 21.1046 14.7 22 12 22C8.09084 22 4.70909 19.7591 3.06364 16.4909C2.38638 15.1409 2 13.6136 2 12C2 10.3864 2.38638 8.85911 3.06364 7.50914Z"/></svg></div>
+            <div class="text-box">
+              <h2>Melsie Inc</h2>
+              <small>2023 - 2024</small>
+             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui atque ea distinctio amet. Minima rerum suscipit iste perferendis sit.</h2>
+             <span class="right-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container left-container">
+            <div class="svg"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3.06364 7.50914C4.70909 4.24092 8.09084 2 12 2C14.6954 2 16.959 2.99095 18.6909 4.60455L15.8227 7.47274C14.7864 6.48185 13.4681 5.97727 12 5.97727C9.39542 5.97727 7.19084 7.73637 6.40455 10.1C6.2045 10.7 6.09086 11.3409 6.09086 12C6.09086 12.6591 6.2045 13.3 6.40455 13.9C7.19084 16.2636 9.39542 18.0227 12 18.0227C13.3454 18.0227 14.4909 17.6682 15.3864 17.0682C16.4454 16.3591 17.15 15.3 17.3818 14.05H12V10.1818H21.4181C21.5364 10.8363 21.6 11.5182 21.6 12.2273C21.6 15.2727 20.5091 17.8363 18.6181 19.5773C16.9636 21.1046 14.7 22 12 22C8.09084 22 4.70909 19.7591 3.06364 16.4909C2.38638 15.1409 2 13.6136 2 12C2 10.3864 2.38638 8.85911 3.06364 7.50914Z"/></svg></div>
+            <div class="text-box">
+              <h2>Chris Inc</h2>
+              <small>2023 - 2024</small>
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui atque ea distinctio amet. Minima rerum suscipit iste perferendis sit.</h2>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+        </div>        
+        <!--
+          Explain how your team collaborates with clients, from initial consultation to project completion.
+          Highlight the roles of each team member in the process.
+        -->
+      </section>
+      <!--END-->
+
+      <!--Pricing And Packaging (sub section)-->
+      <section class="pricing-and-packaging sub-section" id="pricing-and-packaging">
+        <h2 class="sub-sect-name">Pricing & <span>Packages</span></h2>
+        <!--
+          Provide an overview of your pricing structure, including any bundled services that leverage the full range of your team’s skills.
+        -->
+      </section>
+      <!--END-->
+
+    </section>
+    <!--Services End-->
+
+    <hr>
+    
+    <!--Blog Start-->
+    <section class="main-section blog hidden" id="blog">
+      <h1 class="sect-name">Blog</h1>
+      <!--Team Insights ==> Each team member can contribute blog posts on their areas of expertise, offering tips, industry insights, or project case studies. -->
+      <!--Project Spotlights ==> Feature in-depth looks at specific projects, explaining the challenges, solutions, and the teamwork involved. -->
+      <!--Industry News ==> Keep your audience informed about the latest trends in web design, development, and digital marketing. -->
+    </section>
+    <!--Blog End-->
+
+    <hr>
+
+    <!--Support Start-->
+    <section class="main-section support hidden" id="support">
+      <h1 class="sect-name">Support</h1>
+
+      <!--Contact (Sub Section)-->
+      <section class="sub-section contact" id="contact">
+        <h2 class="sub-sect-name">Contact</h2>
+        <!--
+          FORM
+          A simple form for inquiries, with an option to specify which team member the inquiry is for, if applicable.
+
+          INSTANT MESSAGING
+          Buttons for direct communication via WhatsApp, Instagram, TikTok, Facebook, and Gmail.
+        -->
+      </section>
+      <!--END-->
+
+      <!--Tesimonials (Sub Section)-->
+      <section class="sub-section testimonials" id="testimonials">
+        <h2 class="sub-sect-name">Client Testimonials</h2>
+        <!--
+
+        -->
+      </section>
+      <!--END-->
+
+      <!--FAQs (Sub Section)-->
+      <section class="sub-section faqs" id="faqs">
+        <h2 class="sub-sect-name">FAQs</h2>
+        <!--Team Specific Questions-->
+        <!--Service Related Questions-->
+      </section>
+      <!--END-->
+
+      <!--Testimonial (Sub Section)-->
+      <section class="sub-section testimonials" id="testimonials">
+        <h2 class="sub-sect-name">Testimonials</h2>
+      </section>
+      <!--END-->
+
+    </section>
+    <!--Support End-->
+
+    <!--Footer-->
+    <footer>
+      <!--Quick Links-->
+      <!--Social Media Links-->
+      <!--Newsletter Signup-->
+    </footer>
+    <!--Footer End-->
+
+    <!--BETA VERSION TESTING CENTER-->
+  
+    <!--BETA SECTION TESTING END-->
+</body>
+</html>
