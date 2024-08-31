@@ -1,0 +1,161 @@
+.home{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.home h1{
+    font-size: var(--lg-font);
+    color: var(--primary-color);
+    text-align: left;
+    margin-top: 80px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    animation: blink-cursor .1s step-end infinite;
+}
+@keyframes blink-cursor {
+    from {border-right-color: transparent; }
+    to { border-right-color: transparent; }
+}
+#typewriter{
+    color: var(--accent-color);
+}
+.home h2{
+    font-size: var(--sm-font);
+    color: var(--primary-color);
+}
+.home mark{
+    background-color:var(--accent-color);
+    color: var(--primary-color);
+    border-radius:.1cm;
+    padding-block: 5px;
+    padding-inline: 7px;
+}
+.home .btn-wrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.get-in-touch{
+    color: var(--accent-color);
+    background: var(--primary-color);
+}
+
+.explore-our-work{
+    color: var(--primary-color);
+    background: var(--accent-color);
+}
+
+.home button{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                0 1px 3px rgba(0, 0, 0, 0.08); 
+                transition: .2s;
+}
+.home button:hover{
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2),
+                0 3px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.home button:active {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 
+                0 1px 3px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+}
+
+
+/*Breakpoints For different screens*/
+/* Base styles for all devices */
+
+@media (max-width: 479px) {
+    /* Styles for extra small devices (portrait mobile phones) */
+    :root{
+        --lg-font:4rem;
+        --md-font:2.5rem;
+        --sm-font:1.5rem;
+        --xsm-font:1.2rem;
+    }
+    .home{
+        gap: 20px;
+    }
+    .home .btn-wrapper{
+        gap: 15px;
+    }
+    .home button{
+        width: 100%;
+        color: tomato;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    /* Styles for small devices (landscape mobile phones) */
+    :root{
+        --lg-font:2.5rem;
+        --md-font:2rem;
+        --sm-font:1.8rem;
+        --xsm-font:1.4rem;
+    }
+    .home button{
+        height: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium devices (tablets) */
+    :root{
+        --lg-font:3.5rem;
+        --md-font:2.5rem;
+        --sm-font:1.8rem;
+        --xsm-font:1.3rem;
+    }
+    .home button{
+        height: 45px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices (small laptops/desktops) */
+    :root{
+        --lg-font:4.5rem;
+        --md-font:3.5rem;
+        --sm-font:2.5rem;
+        --xsm-font:1.5rem;
+    }
+    .home button{
+        height: 45px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Styles for extra large devices (large desktops/monitors) */
+    :root{
+        --lg-font:5.5rem;
+        --md-font:3.5rem;
+        --sm-font:2.5rem;
+        --xsm-font:1.5rem;
+    }
+    .home button{
+        height: 45px;
+    }
+}
+
+@media (min-width: 1440px) {
+    /* Styles for ultra-wide monitors */
+    :root{
+        --lg-font:4.5rem;
+        --md-font:3rem;
+        --sm-font:2rem;
+        --xsm-font:1.5rem;
+    }
+    nav .navbar .links li a::before{
+        height: 60%;
+        top: 20%;
+    }
+    .home button{
+        height: 50px;
+    }
+}

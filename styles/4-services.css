@@ -1,0 +1,215 @@
+.services .sub-section .info{
+    text-align: center;
+    font-size: var(--sm-font);
+    margin-block: 50px;
+    font-weight: 600;
+    opacity: .7;
+}
+/*Service Offerings*/
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.wrapper .srvs-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    height: 280px;
+    width: 300px;
+    background: var(--bg-color);
+    padding: 30px;
+    border-radius: .1cm;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: .3s ease;
+    & 
+    .svg{
+        color: var(--primary-color);
+        height: 50px;
+        width: 50px;
+    }
+    h3, h4{
+        text-align: center;
+    }
+    h4{
+        color: var(--text-color);
+        font-size:calc( var(--xsm-font) - .3rem);
+    } h3{
+        color: var(--text-color);
+        font-size: var(--sm-font);
+    }
+}
+
+.srvs-card:hover{
+    background: var(--primary-color);
+    scale: 1.05;
+    &
+    .svg{
+        color: var(--accent-color);
+    }
+    h3, h4{
+        color: var(--bg-color);
+    }
+}
+.srvs-card:active{
+    scale: 1;
+}
+/*Process Overview*/
+
+.timeline{
+    position: relative;
+    margin: 100px auto;
+    background: var(--primary-color);
+    z-index: -2;
+
+    &
+    h2{
+        font-size: var(--xsm-font);
+    }
+    .text-box{
+        padding: 20px 30px;
+        background: var(--bg-color);
+        position: relative;
+        border-radius: .1cm;
+        font-size: var(--xsm-font);
+    }
+     .container{
+        padding: 10px 50px;
+        position: relative;
+        width: 50%;
+        animation: movedown 1s linear forwards;
+        opacity: 0;
+        transition: .5s;
+    }
+    .container:nth-child(1){
+        animation-delay: 0s;
+    }
+    .container:nth-child(2){
+        animation-delay: 1.5s;
+
+    }
+    .container:nth-child(3){
+        animation-delay: 2.5s;
+
+    }
+    .container:nth-child(4){
+        animation-delay: 3.5s;
+
+    }
+    .container:nth-child(5){
+        animation-delay: 4.5s;
+
+    }
+
+    .left-container{
+        left: 0;
+    }
+    .right-container{
+        left: 50%;
+    }
+    .svg{
+        height: 50px;
+        width: 50px;
+        background: var(--accent-color);
+        display: inline-flex;
+        justify-content:center;
+        align-items: center;
+        padding: 10px;
+        position: absolute;
+        border-radius: 50%;
+        right: -25px;
+        top: 32px;
+        z-index: 10;
+    }
+
+    .right-container .svg{
+        left: -25px;
+    }
+    .left-container-arrow{
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 28px;
+        z-index: 1;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid var(--bg-color);
+        right: -15px;
+    }
+    .right-container-arrow{
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 28px;
+        z-index: 1;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid var(--bg-color);
+        left: -15px;
+    }
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: red;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index:-1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline{
+        margin: 50px auto;
+        & .container{
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 25px;
+
+            .text-box{
+                font-size: 13px;
+            }
+            .text-box small{
+                margin-bottom: 10px;
+            }
+            .right-container{
+                left: 0;
+            }
+            .left-container .svg, .right-container .svg{
+                border-right: 15px solid var(--bg-color);
+                border-left: 0;
+                left: -15px;
+            }
+        }
+    }
+    .timeline::after{
+        left: 31px;
+    }
+}
